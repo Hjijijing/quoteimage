@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.quote-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  font-size: 2rem;
+
+  z-index: 10;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-text {
+  text-align: center;
+  display: block;
+  margin-bottom: 2rem;
+  width: 30%;
+  text-shadow: 0px 1px 1rem black;
+  transition: transform 0.5s;
+}
+
+.quote-text:hover {
+  transform: scale(1.2);
+}
+
+.quote-body {
+  color: white;
+  font-size: 3rem;
+}
+
+.quote-author {
+  color: #ddd;
+  font-size: 2rem;
+}
